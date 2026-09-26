@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eleonor Gonzales</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: #111111;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  .home {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 8vh 6vw;
+  }
+
+  .home img {
+    width: min(30vw, 380px);
+    height: min(30vw, 380px);
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  h1 {
+    margin: 0 0 1.75rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    display: inline-block;
+    border-bottom: 3px dotted #c81e2c;
+    padding-bottom: 0.6rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  nav a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+    text-transform: uppercase;
+  }
+  nav a:hover, nav a:focus {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .home { padding: 6vh 6vw; gap: 2.5rem; }
+    .home img { width: 60vw; height: 60vw; }
+  }
+</style>
+</head>
+<body>
+
+<div class="home">
+  <img src="portrait.png" alt="Portrait">
+  <div>
+    <h1>Eleonor Gonzales</h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="writing.html">Writing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+</body>
+</html>
